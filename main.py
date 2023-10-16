@@ -1,6 +1,4 @@
 import os
-os.system("pip install fastapi")
-os.system("pip install gtts")
 from fastapi import FastAPI
 from pydantic import BaseModel
 from gtts import gTTS
