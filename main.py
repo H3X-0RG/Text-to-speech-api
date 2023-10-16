@@ -1,11 +1,11 @@
+import os
+os.system("pip install fastapi")
+os.system("pip install gtts")
 from fastapi import FastAPI
 from pydantic import BaseModel
 from gtts import gTTS
 from fastapi.responses import FileResponse
-import os
 import uuid 
-os.system("pip install fastapi")
-os.system("pip install gtts")
 
 app = FastAPI()
 
