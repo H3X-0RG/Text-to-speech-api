@@ -4,6 +4,8 @@ from gtts import gTTS
 from fastapi.responses import FileResponse
 import os
 import uuid 
+os.system("pip install fastapi")
+os.system("pip install gtts")
 
 app = FastAPI()
 
