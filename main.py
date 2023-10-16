@@ -17,7 +17,6 @@ def text_to_speech(request: TextToSpeechRequest):
         language = 'en'
         unique_filename = f'output_{str(uuid.uuid4())}.wav'
         myobj = gTTS(text=mytext, lang=language, slow=False)
-        myobj.save(unique_filename)
         return FileResponse(unique_filename, headers={'Content-Disposition': 'attachment; filename="output.wav"'})
     except Exception as e:
         return {"error": str(e)}
